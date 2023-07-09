@@ -8,11 +8,8 @@ app.use(express.json)
 let authRoutes = require("./routes/authRoutes")
 app.use(authRoutes)
 
-let helloRoutes = require("./routes/helloRoutes")
-app.use(helloRoutes)
-
-// app.use(todoRoutes)
-// let todoRoutes = require("./routes")
+let proRoutes = require("./routes/proRoutes")
+app.use(proRoutes)
 
 app.listen(PORT, function(){
     console.log("Application is litenting on port", PORT)
